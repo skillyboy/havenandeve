@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Haven &amp; Eve — Coffee Café · Lagos Mainland</title>
+<meta name="description" content="Haven & Eve Coffee Café — a hidden gem in Ketu (Alapere), Lagos. Premium coffee, fresh-pressed juices and best-selling burgers. A playground in your mouth. Rated 4.6 on Google." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="icon" type="image/png" href="images/logo-clean.png" />
+<link rel="apple-touch-icon" href="images/logo-clean.png" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============== TOP BAR ============== -->
+<div class="topbar">
+  <div class="wrap">
+    <span>A playground in your mouth</span>
+    <span class="dot"></span>
+    <span>Premium coffee &amp; more</span>
+    <span class="dot"></span>
+    <span>Lagos Mainland</span>
+  </div>
+</div>
+
+<!-- ============== NAV ============== -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Haven and Eve — home">
+      <img class="brand-logo" src="images/logo-clean.png" alt="Haven &amp; Eve Coffee Café" />
+      <span class="brand-word">Haven <span class="amp">&amp;</span> Eve</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#story">Our Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">The Café</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="nav-right">
+      <button class="atmos-toggle" id="atmosToggle" aria-label="Toggle day and candlelit mode" title="Day / Candlelit">
+        <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.4"/><g stroke-linecap="round"><line x1="12" y1="1.6" x2="12" y2="4.4"/><line x1="12" y1="19.6" x2="12" y2="22.4"/><line x1="1.6" y1="12" x2="4.4" y2="12"/><line x1="19.6" y1="12" x2="22.4" y2="12"/><line x1="4.4" y1="4.4" x2="6.4" y2="6.4"/><line x1="17.6" y1="17.6" x2="19.6" y2="19.6"/><line x1="4.4" y1="19.6" x2="6.4" y2="17.6"/><line x1="17.6" y1="6.4" x2="19.6" y2="4.4"/></g></svg>
+        <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.2A8.2 8.2 0 0 1 9.8 4 8.4 8.4 0 1 0 20 14.2z"/></svg>
+      </button>
+      <a href="https://wa.me/2347033637329?text=Hi%20Haven%20%26%20Eve%2C%20I'd%20like%20to%20place%20an%20order" target="_blank" rel="noopener" class="btn btn-solid" id="navOrder">Order <span class="arrow">↗</span></a>
+      <button class="burger" id="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#story">Our Story</a>
+  <a href="#menu">Menu</a>
+  <a href="#gallery">The Café</a>
+  <a href="#visit">Visit</a>
+  <a href="#" class="mm-order" id="mobileOrder">Order <span class="arrow" aria-hidden="true">↗</span></a>
+  <div class="mm-foot">@heavenandevecoffeecafe</div>
+</div>
+
+<main id="top">
+
+<!-- ============== HERO ============== -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow" id="heroEyebrow">Premium Coffee &amp; More · Lagos</span>
+      <h1 class="display-xl" id="heroTitle">
+        <span class="line"><span>The best coffee</span></span>
+        <span class="line"><span>on the <span class="serif-italic clay">mainland</span>.</span></span>
+      </h1>
+      <p class="lead" id="heroLead">A warm little corner built to be a <em>playground in your mouth</em> — premium coffee, fresh-pressed juices, and burgers worth crossing the bridge for.</p>
+      <div class="hero-cta reveal d4">
+        <a href="#menu" class="btn btn-solid">See the Menu <span class="arrow">→</span></a>
+        <a href="https://wa.me/2347033637329?text=Hi%20Haven%20%26%20Eve%2C%20I'd%20like%20to%20place%20an%20order" target="_blank" rel="noopener" class="btn btn-ghost">Order on WhatsApp</a>
+      </div>
+      <div class="hero-meta reveal d4">
+        <div class="item">
+          <div class="k">Loved by</div>
+          <div class="v"><span class="stars">★★★★★</span></div>
+        </div>
+        <div class="item">
+          <div class="k">Find us</div>
+          <div class="v">Lagos Mainland</div>
+        </div>
+        <div class="item">
+          <div class="k">On the menu</div>
+          <div class="v">Coffee · Juice · Burgers</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-art reveal d2">
+      <div class="frame">
+        <div class="hero-stack" id="heroStack" role="img" aria-label="Haven & Eve café"></div>
+        <img class="badge-spin" src="images/logo-clean.png" alt="Haven &amp; Eve seal" />
+      </div>
+      <div class="tag" id="heroTag">Hand-poured daily</div>
+      <div class="hero-dots" id="heroDots" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== MARQUEE ============== -->
+<section class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Premium coffee <span class="star">✦</span> Fresh-pressed juice <span class="star">✦</span> <span class="muted">Best-seller burgers</span> <span class="star">✦</span> Iced &amp; hot <span class="star">✦</span> A playground in your mouth <span class="star">✦</span> <span class="muted">Pull up a chair</span> <span class="star">✦</span></span>
+    <span>Premium coffee <span class="star">✦</span> Fresh-pressed juice <span class="star">✦</span> <span class="muted">Best-seller burgers</span> <span class="star">✦</span> Iced &amp; hot <span class="star">✦</span> A playground in your mouth <span class="star">✦</span> <span class="muted">Pull up a chair</span> <span class="star">✦</span></span>
+  </div>
+</section>
+
+<!-- ============== STORY ============== -->
+<section class="story" id="story">
+  <div class="wrap">
+    <div class="story-art reveal">
+      <image-slot id="story-1" src="images/storefront.jpg" shape="rounded" radius="6" placeholder="Storefront"></image-slot>
+      <image-slot id="story-2" src="images/window-cup.jpeg" shape="rounded" radius="6" placeholder="Our cup"></image-slot>
+    </div>
+    <div class="story-copy">
+      <span class="eyebrow reveal">Our Story</span>
+      <h2 class="display-l reveal d1">A little corner of<br /><span class="serif-italic clay">haven</span> on the mainland.</h2>
+      <p class="lead reveal d2">Haven &amp; Eve was sent down to build a playground in your mouth — the kind of spot the mainland deserved, equal parts great cup and good company.</p>
+      <p class="reveal d2">Premium coffee pulled with care, fresh-pressed juices, and a kitchen turning out our best-selling burgers. No WiFi, by design — just good signage, warm wood, and a seat that says <em>focus, or don't</em>. Whether you're here to work, to meet, or just to slow down for ten quiet minutes, there's a chair with your name on it.</p>
+      <div class="story-stats reveal d3">
+        <div>
+          <div class="n">100%</div>
+          <div class="l">Premium quality</div>
+        </div>
+        <div>
+          <div class="n">No.1</div>
+          <div class="l">Best seller · beef burger</div>
+        </div>
+        <div>
+          <div class="n">All day</div>
+          <div class="l">Coffee, juice &amp; brunch</div>
+        </div>
+      </div>
+      <div class="story-sign reveal d3">— The Haven &amp; Eve family</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== MENU ============== -->
+<section class="menu" id="menu">
+  <div class="wrap">
+    <div class="menu-head">
+      <div>
+        <span class="eyebrow reveal">The Menu</span>
+        <h2 class="display-l reveal d1">What we're<br /><span class="serif-italic clay">pouring</span>.</h2>
+      </div>
+      <p class="lead reveal d2" style="max-width: 34ch;">A short, honest menu — premium coffee, fresh-pressed juice, and a kitchen built to be a playground in your mouth.</p>
+    </div>
+
+    <div class="menu-feature reveal">
+      <image-slot id="feat-burger" src="images/burger.jpeg" shape="rect" placeholder="Best seller"></image-slot>
+      <div class="mf-body">
+        <span class="badge">★ Best Seller</span>
+        <h3 class="display-m">The Beef Burger</h3>
+        <p>Toasted sesame brioche, juicy beef patty, melted cheese, pickles and our house sauce. The one everybody crosses the bridge for — available now, served hot.</p>
+        <div class="mf-foot">
+          <span class="mf-price">₦8,500</span>
+          <span class="mf-note">Add fries · +₦2,000</span>
+        </div>
+        <button class="mf-add" type="button" data-name="The Beef Burger" data-price="8500">Add to order <span aria-hidden="true">+</span></button>
+      </div>
+    </div>
+
+    <div class="menu-grid">
+      <div class="menu-cat reveal">
+        <div class="cat-title"><span>Espresso Bar</span><span class="note">Hot</span></div>
+        <div class="menu-item">
+          <div class="mi-text"><div class="mi-name">Espresso</div></div>
+          <span class="mi-lead"></span>
+          <span class="mi-price">₦1,500</span>
+        </div>
+        <div class="menu-item tall">
+          <div class="mi-text"><div class="mi-name">Flat White</div><div class="mi-desc">Our signature — double ristretto, silky milk</div></div>
+          <span class="mi-lead"></span>
+          <span class="mi-price">₦2,800</span>
+        </div>
+        <div class="menu-item">
+          <div class="mi-text"><div class="mi-name">Cappuccino</div></div>
+          <span class="mi-lead"></span>
+          <span class="mi-price">₦2,600</span>
+        </div>
+        <div class="menu-item tall">
+          <div class="mi-text"><div class="mi-name">Café Latte</div><div class="mi-desc">Add vanilla, hazelnut or cinnamon · +₦400</div></div>
+          <span class="mi-lead"></span>
+          <span class="mi-price">₦2,800</span>
+        </div>
+      </div>
+
+      <div class="menu-cat reveal d1">
+        <div class="cat-title"><span>Cold &amp; Iced</span><span class="note">12hr steep</span></div>
+        <div class="menu-item tall">
+          <div class="mi-text"><div class="mi-name">House Cold Brew</div><div class="mi-desc">Slow-steeped overnight, smooth &amp; low-acid</div></div>
+          <span class="mi-lead"></span>
+          <span class="mi-price">₦3,000</span>
+        </div>
+        <div class="menu-item">
+          <div class="mi-text"><div class="mi-name">Iced Latte</div></div>
+          <span class="mi-lead"></span>
+          <span class="mi-price">₦3,000</span>
+        </div>
+        <div class="menu-item tall">
+          <div class="mi-text"><div class="mi-name">Eve's Spiced Mocha</div><div class="mi-desc">Dark chocolate, warm spice, espresso</div></div>
+          <span class="mi-lead"></span>
+          <span class="mi-price">₦3,400</span>
+        </div>
+        <div class="menu-item">
+          <div class="mi-text"><div class="mi-name">Affogato</div></div>
+          <span class="mi-lead"></span>
+          <span class="mi-price">₦3,200</span>
+        </div>
+      </div>
+
+      <div class="menu-cat reveal d2">
+        <div class="cat-title"><span>Fresh Juices</span><span class="note">Pressed daily</span></div>
+        <div class="menu-item tall">
+          <div class="mi-text"><div class="mi-name">Fresh Orange</div><div class="mi-desc">Pressed to order, nothing added</div></div>
+          <span class="mi-lead"></span>
+          <span class="mi-price">₦3,500</span>
+        </div>
+        <div class="menu-item">
+          <div class="mi-text"><div class="mi-name">Pineapple &amp; Ginger</div></div>
+          <span class="mi-lead"></span>
+          <span class="mi-price">₦3,800</span>
+        </div>
+        <div class="menu-item tall">
+          <div class="mi-text"><div class="mi-name">Green Detox</div><div class="mi-desc">Apple, cucumber, lime, mint</div></div>
+          <span class="mi-lead"></span>
+          <span class="mi-price">₦4,000</span>
+        </div>
+        <div class="menu-item">
+          <div class="mi-text"><div class="mi-name">Watermelon Cooler</div></div>
+          <span class="mi-lead"></span>
+          <span class="mi-price">₦3,800</span>
+        </div>
+      </div>
+
+      <div class="menu-cat reveal d3">
+        <div class="cat-title"><span>The Kitchen</span><span class="note">Fresh daily</span></div>
+        <div class="menu-item tall">
+          <div class="mi-text"><div class="mi-name">Beef Burger</div><div class="mi-desc">Our best seller — cheese, pickles, house sauce</div></div>
+          <span class="mi-lead"></span>
+          <span class="mi-price">₦8,500</span>
+        </div>
+        <div class="menu-item tall">
+          <div class="mi-text"><div class="mi-name">Chicken Wings &amp; Fries</div><div class="mi-desc">Glazed wings, golden fries, dips</div></div>
+          <span class="mi-lead"></span>
+          <span class="mi-price">₦7,500</span>
+        </div>
+        <div class="menu-item tall">
+          <div class="mi-text"><div class="mi-name">Meat Pie &amp; Pap</div><div class="mi-desc">Flaky, golden — a homegrown favourite</div></div>
+          <span class="mi-lead"></span>
+          <span class="mi-price">₦3,000</span>
+        </div>
+        <div class="menu-item tall">
+          <div class="mi-text"><div class="mi-name">Shakshuka &amp; Sourdough</div><div class="mi-desc">All-day brunch favourite</div></div>
+          <span class="mi-lead"></span>
+          <span class="mi-price">₦5,500</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="menu-foot reveal">Prices in Naira. Plant-based milks available on any drink · +₦400</p>
+  </div>
+</section>
+
+<!-- ============== GALLERY ============== -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="gallery-head">
+      <span class="eyebrow center reveal">The Café</span>
+      <h2 class="display-l reveal d1">A room that <span class="serif-italic clay">holds you</span>.</h2>
+    </div>
+    <div class="gallery-grid reveal d1">
+      <image-slot id="g1" class="g-a" src="images/wings-fries.jpg" shape="rounded" radius="6" placeholder="Wings &amp; fries"></image-slot>
+      <image-slot id="g2" class="g-b" src="images/meatpie-pap.jpg" shape="rounded" radius="6" placeholder="Meat pie &amp; pap"></image-slot>
+      <image-slot id="g3" class="g-c" src="images/juice-hand.jpeg" shape="rounded" radius="6" placeholder="Fresh juice"></image-slot>
+      <image-slot id="g4" class="g-b" src="images/espresso.jpeg" shape="rounded" radius="6" placeholder="Espresso"></image-slot>
+      <image-slot id="g5" class="g-d" src="images/focus-desk.jpeg" shape="rounded" radius="6" placeholder="Focus corner"></image-slot>
+    </div>
+  </div>
+</section>
+
+<!-- ============== VISIT ============== -->
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div class="visit-copy">
+      <span class="eyebrow reveal">Visit Us</span>
+      <h2 class="display-l reveal d1">A hidden gem<br />in <span class="serif-italic">Ketu</span>.</h2>
+      <div class="rating reveal d2">
+        <span class="stars">★★★★★</span>
+        <span class="rscore">4.6</span>
+        <span class="rsub">on Google · ₦10,000–20,000 per person</span>
+      </div>
+      <div class="visit-info reveal d2">
+        <div class="blk">
+          <div class="k">Address</div>
+          <div class="v">2b Doyin Omololu St, off Demurin Street,<br />Alapere, Kosofe 100244, Lagos</div>
+        </div>
+        <div class="blk">
+          <div class="k">Call ahead</div>
+          <div class="v"><a href="tel:+2347033637329">0703 363 7329</a></div>
+        </div>
+      </div>
+      <div class="visit-hours reveal d2">
+        <div class="row now"><span class="d">Open now</span><span class="t">Closes 10:00pm</span></div>
+        <div class="row"><span class="d">Mon – Fri</span><span class="t">8:00am – 10:00pm</span></div>
+        <div class="row"><span class="d">Sat – Sun</span><span class="t">9:00am – 10:00pm</span></div>
+      </div>
+      <div class="visit-cta reveal d3">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Heaven+and+Eve+Coffee+Cafe+2b+Doyin+Omololu+Alapere+Lagos" target="_blank" rel="noopener" class="btn btn-cream">Get directions <span class="arrow">→</span></a>
+        <a href="https://wa.me/2347033637329?text=Hi%20Haven%20%26%20Eve%2C%20I'd%20like%20to%20place%20an%20order" target="_blank" rel="noopener" class="btn btn-outline-cream">Order on WhatsApp</a>
+      </div>
+    </div>
+    <div class="visit-map reveal d1">
+      <iframe
+        title="Haven and Eve Coffee Cafe location map"
+        src="https://www.google.com/maps?q=Heaven+and+Eve+Coffee+Cafe,+2b+Doyin+Omololu+St,+Alapere,+Lagos&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============== INSTAGRAM ============== -->
+<section class="insta">
+  <div class="wrap">
+    <span class="eyebrow center reveal">On the 'Gram</span>
+    <h2 class="display-m reveal d1">Follow along</h2>
+    <a class="handle reveal d1" href="https://www.instagram.com/heavenandevecoffeecafe/" target="_blank" rel="noopener">@heavenandevecoffeecafe</a>
+    <div class="insta-grid reveal d2">
+      <image-slot id="ig1" src="images/takeaway.jpeg" shape="rounded" radius="4" placeholder="IG"></image-slot>
+      <image-slot id="ig2" src="images/burger.jpeg" shape="rounded" radius="4" placeholder="IG"></image-slot>
+      <image-slot id="ig3" src="images/interior.jpg" shape="rounded" radius="4" placeholder="IG"></image-slot>
+      <image-slot id="ig4" src="images/wings-fries.jpg" shape="rounded" radius="4" placeholder="IG"></image-slot>
+      <image-slot id="ig5" src="images/window-cup.jpeg" shape="rounded" radius="4" placeholder="IG"></image-slot>
+      <image-slot id="ig6" src="images/iced-coffee.jpeg" shape="rounded" radius="4" placeholder="IG"></image-slot>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============== ORDER / CART ============== -->
+<button class="cart-fab" id="cartFab" type="button" aria-label="View your order">
+  <span>Your order</span>
+  <span class="fab-count" id="fabCount">0</span>
+</button>
+
+<div class="cart-scrim" id="cartScrim"></div>
+
+<aside class="cart-drawer" id="cartDrawer" aria-label="Your order" aria-hidden="true">
+  <div class="cart-hd">
+    <div>
+      <h3>Your Order</h3>
+      <div class="sub">Pickup &amp; delivery · Alapere</div>
+    </div>
+    <div class="cart-hd-actions">
+      <button class="cart-clear" id="cartClear" type="button" hidden>Clear</button>
+      <button class="cart-close" id="cartClose" type="button" aria-label="Close">×</button>
+    </div>
+  </div>
+  <div class="cart-body" id="cartBody"></div>
+  <div class="cart-ft">
+    <textarea class="cart-note" id="cartNote" rows="2" placeholder="Name + any notes (e.g. table 3, no onions, takeaway)…"></textarea>
+    <div class="cart-tot">
+      <span class="lbl">Subtotal</span>
+      <span class="val" id="cartTotal">₦0</span>
+    </div>
+    <button class="cart-send" id="cartSend" type="button" disabled>
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.515 5.26l-.999 3.648 3.973-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.166-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+      Send order on WhatsApp
+    </button>
+    <div class="cart-hint">Opens WhatsApp with your order ready to send.</div>
+  </div>
+</aside>
+
+<!-- ============== FOOTER ============== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="col about">
+      <img class="foot-badge" src="images/logo-clean.png" alt="Haven and Eve logo badge" />
+      <div class="mark">Haven <span class="amp">&amp;</span> Eve</div>
+      <p class="blurb">A hidden gem in Ketu — premium coffee, fresh juice and best-selling burgers. A playground in your mouth, on the Lagos mainland.</p>
+    </div>
+    <div class="col">
+      <h4>Explore</h4>
+      <a href="#story">Our Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">The Café</a>
+      <a href="#visit">Visit</a>
+    </div>
+    <div class="col">
+      <h4>Hours</h4>
+      <p>Mon–Fri · 8:00 – 22:00</p>
+      <p>Sat–Sun · 9:00 – 22:00</p>
+      <p>Open now · closes 10pm</p>
+    </div>
+    <div class="col">
+      <h4>Find Us</h4>
+      <p>2b Doyin Omololu St,<br />off Demurin St, Alapere,<br />Kosofe, Lagos</p>
+      <a href="tel:+2347033637329">0703 363 7329</a>
+      <a href="https://www.instagram.com/heavenandevecoffeecafe/" target="_blank" rel="noopener">@heavenandevecoffeecafe</a>
+    </div>
+  </div>
+  <div class="footer-bot">
+    <div class="wrap">
+      <span>© 2026 Haven &amp; Eve Coffee Café · Lagos, Nigeria</span>
+      <span>Crafted with care, on the mainland.</span>
+    </div>
+  </div>
+</footer>
+
+<div id="tweaks-root"></div>
+
+<script src="image-slot.js"></script>
+<script src="script.js"></script>
+<script src="order.js"></script>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="app.jsx"></script>
+</body>
+</html>

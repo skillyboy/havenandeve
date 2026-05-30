@@ -1,4 +1,4 @@
-/* Heaven & Eve — interactions */
+/* Haven & Eve — interactions */
 (function () {
   /* ---------- Nav shadow on scroll ---------- */
   const nav = document.getElementById('nav');
@@ -70,7 +70,7 @@
     {
       img: 'images/focus-desk.jpeg',
       eyebrow: 'A Hidden Gem · Ketu',
-      title: 'Your quiet corner<br />of <span class="serif-italic clay">heaven</span>.',
+      title: 'Your quiet corner<br />of <span class="serif-italic clay">haven</span>.',
       lead: 'Tucked away in Alapere — warm wood, soft light, and a seat that says slow down for ten quiet minutes.',
       tag: 'Find your seat',
     },

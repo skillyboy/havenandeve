@@ -1,4 +1,4 @@
-/* Heaven & Eve — order flow
+/* Haven & Eve — order flow
    Add-to-cart from the menu, a slide-in drawer, and a WhatsApp checkout. */
 (function () {
   const PHONE = '2347033637329';
@@ -21,6 +21,8 @@
   const sendBtn = document.getElementById('cartSend');
   const noteEl = document.getElementById('cartNote');
   const navOrder = document.getElementById('navOrder');
+  const clearBtn = document.getElementById('cartClear');
+  const mobileOrder = document.getElementById('mobileOrder');
   if (!fab || !drawer) return;
 
   /* ---------- Inject "add" buttons into menu rows ---------- */
@@ -105,6 +107,7 @@
       });
       sendBtn.disabled = false;
     }
+    if (clearBtn) clearBtn.hidden = !items.length;
     totalEl.textContent = naira(total());
   }
 
@@ -128,6 +131,24 @@
   if (navOrder) {
     navOrder.addEventListener('click', (e) => { e.preventDefault(); open(); });
   }
+  if (mobileOrder) {
+    mobileOrder.addEventListener('click', (e) => {
+      e.preventDefault();
+      // close the mobile nav if it's open, then open the cart
+      const mm = document.getElementById('mobileMenu');
+      const bg = document.getElementById('burger');
+      if (mm) mm.classList.remove('open');
+      if (bg) bg.classList.remove('open');
+      open();
+    });
+  }
+  if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+      cart = {};
+      save();
+      render();
+    });
+  }
 
   let bumpT = null;
   function bumpFab() {
@@ -140,7 +161,7 @@
   sendBtn.addEventListener('click', () => {
     const items = Object.values(cart);
     if (!items.length) return;
-    let msg = 'Hi Heaven & Eve, I’d like to order:\n';
+    let msg = 'Hi Haven & Eve, I’d like to order:\n';
     items.forEach((it) => {
       msg += `• ${it.qty}× ${it.name} — ${naira(it.price * it.qty)}\n`;
     });
